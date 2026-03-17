@@ -42,9 +42,11 @@ const OfferSection = () => {
             <div className="text-sm text-muted-foreground mt-1">One-time payment. Instant access.</div>
           </div>
 
-          <Button variant="neon" size="xl" className="w-full sm:w-auto mb-6">
-            Get Instant Access — $97
-          </Button>
+          <a href="https://buy.stripe.com/28EcN68F77Ga8Jw6YBbEA02" target="_blank" rel="noopener noreferrer">
+            <Button variant="neon" size="xl" className="w-full sm:w-auto mb-6">
+              Get Instant Access — $97
+            </Button>
+          </a>
 
           <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
             <ShieldCheck className="w-4 h-4 text-neon" />

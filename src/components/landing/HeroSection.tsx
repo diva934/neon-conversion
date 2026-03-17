@@ -30,9 +30,11 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-          <Button variant="neon" size="xl" className="w-full sm:w-auto">
-            Get Started Now — $97
-          </Button>
+          <a href="https://buy.stripe.com/28EcN68F77Ga8Jw6YBbEA02" target="_blank" rel="noopener noreferrer">
+            <Button variant="neon" size="xl" className="w-full sm:w-auto">
+              Get Started Now — $97
+            </Button>
+          </a>
           <Button variant="ghost" size="lg" className="text-muted-foreground w-full sm:w-auto">
             <Play className="w-4 h-4 mr-2" />
             Watch Demo
