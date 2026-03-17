@@ -18,9 +18,11 @@ const FinalCTASection = () => {
         <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
           Stop scrolling. Start building your automated content machine today.
         </p>
-        <Button variant="neon" size="xl" className="w-full sm:w-auto">
-          Get Started Now — $97
-        </Button>
+        <a href="https://buy.stripe.com/28EcN68F77Ga8Jw6YBbEA02" target="_blank" rel="noopener noreferrer">
+          <Button variant="neon" size="xl" className="w-full sm:w-auto">
+            Get Started Now — $97
+          </Button>
+        </a>
         <p className="text-xs text-muted-foreground mt-4">Instant access · No subscriptions · 30-day guarantee</p>
       </motion.div>
     </section>
