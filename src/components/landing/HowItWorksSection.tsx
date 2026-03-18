@@ -1,14 +1,35 @@
 import { motion } from "framer-motion";
-import { User, Video, Share2, DollarSign } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Brain, Video, Share2, DollarSign } from "lucide-react";
 
 const steps = [
-  { icon: User, title: "Create an AI Avatar", desc: "Pick a style, upload a reference, and let AI build your on-screen persona." },
-  { icon: Video, title: "Generate Short-Form Content", desc: "AI writes scripts, creates visuals, and produces scroll-stopping videos." },
-  { icon: Share2, title: "Post Automatically", desc: "Schedule and publish across TikTok, Instagram, and YouTube Shorts." },
-  { icon: DollarSign, title: "Monetize with a Digital Product", desc: "Attach your $97 offer and let the funnel convert viewers into buyers." },
+  {
+    icon: Brain,
+    title: "Stop chasing trends",
+    desc: "No more jumping between business models that don't work. This system is built to last — powered by AI, not hype.",
+  },
+  {
+    icon: Video,
+    title: "Let AI create your content",
+    desc: "AI writes your scripts, builds your avatar, and produces scroll-stopping videos — without you ever touching a camera.",
+  },
+  {
+    icon: Share2,
+    title: "Publish on autopilot",
+    desc: "Your content goes live across TikTok, Instagram, and YouTube Shorts automatically. You focus on strategy, not posting.",
+  },
+  {
+    icon: DollarSign,
+    title: "Turn views into revenue",
+    desc: "Attach your digital product, let the built-in funnel do the selling, and watch viewers become paying customers.",
+  },
 ];
 
 const HowItWorksSection = () => {
+  const scrollToOffer = () => {
+    document.getElementById("offer-section")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="px-6 py-24">
       <div className="max-w-3xl mx-auto">
@@ -23,7 +44,6 @@ const HowItWorksSection = () => {
         </motion.div>
 
         <div className="relative">
-          {/* Timeline line */}
           <div className="absolute left-6 sm:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-neon/60 via-neon/20 to-transparent" />
 
           <div className="space-y-12">
@@ -36,7 +56,6 @@ const HowItWorksSection = () => {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="relative flex items-start gap-6 pl-2"
               >
-                {/* Dot */}
                 <div className="relative z-10 flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-neon/10 neon-border flex items-center justify-center neon-glow">
                   <step.icon className="w-5 h-5 text-neon" />
                 </div>
@@ -52,6 +71,21 @@ const HowItWorksSection = () => {
             ))}
           </div>
         </div>
+
+        {/* Inspiring CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-16"
+        >
+          <p className="text-lg text-muted-foreground mb-6">
+            You don't need followers. You don't need experience. You just need to start.
+          </p>
+          <Button variant="neon" size="xl" onClick={scrollToOffer}>
+            Start Building Your System
+          </Button>
+        </motion.div>
       </div>
     </section>
   );
