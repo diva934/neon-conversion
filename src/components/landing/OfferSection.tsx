@@ -14,8 +14,11 @@ const includes = [
 
 const OfferSection = () => {
   return (
-    <section className="px-6 py-24">
-      <div className="max-w-2xl mx-auto">
+    <section id="offer-section" className="relative px-6 py-24 overflow-hidden">
+      {/* Green glow behind */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-neon/8 blur-[120px] pointer-events-none" />
+
+      <div className="relative z-10 max-w-2xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +47,7 @@ const OfferSection = () => {
 
           <a href="https://buy.stripe.com/28EcN68F77Ga8Jw6YBbEA02" target="_blank" rel="noopener noreferrer">
             <Button variant="neon" size="xl" className="w-full sm:w-auto mb-6">
-              Get Instant Access — $97
+              Get Instant Access
             </Button>
           </a>
 
