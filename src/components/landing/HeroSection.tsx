@@ -8,7 +8,6 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-[70vh] flex flex-col items-center justify-center px-6 pt-24 pb-16 overflow-hidden">
-      {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-neon/5 blur-[120px] pointer-events-none" />
 
       <motion.div
@@ -33,10 +32,6 @@ const HeroSection = () => {
             Get Started Now
           </Button>
         </div>
-
-        <p className="text-sm text-muted-foreground">
-          Join 2,400+ creators already using the system
-        </p>
       </motion.div>
     </section>
   );

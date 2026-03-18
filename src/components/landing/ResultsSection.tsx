@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const results = [
   { number: "4.8M", label: "Views Generated", context: "Using AI-powered reels" },
-  { number: "+$1,940", label: "First-Week Sales", context: "$27 to $597 digital offers" },
+  { number: "+$1,940", label: "First-Week Sales", context: "27–597$ digital offer" },
   { number: "29", label: "Videos Created", context: "In a single batch" },
   { number: "12", label: "AI Avatars", context: "Launched in one week" },
 ];
