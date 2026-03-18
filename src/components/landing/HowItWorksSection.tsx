@@ -5,23 +5,23 @@ import { Brain, Video, Share2, DollarSign } from "lucide-react";
 const steps = [
   {
     icon: Brain,
-    title: "Stop chasing trends",
-    desc: "No more jumping between business models that don't work. This system is built to last — powered by AI, not hype.",
+    title: "Create your AI content creator",
+    desc: "No face, no filming. Build a digital avatar that represents your brand and creates content for you.",
   },
   {
     icon: Video,
-    title: "Let AI create your content",
-    desc: "AI writes your scripts, builds your avatar, and produces scroll-stopping videos — without you ever touching a camera.",
+    title: "Generate short-form content automatically",
+    desc: "The system produces scroll-stopping videos ready to post — without you ever touching a camera.",
   },
   {
     icon: Share2,
-    title: "Publish on autopilot",
-    desc: "Your content goes live across TikTok, Instagram, and YouTube Shorts automatically. You focus on strategy, not posting.",
+    title: "Plug in a digital product",
+    desc: "Attach your offer to the content pipeline and let the built-in funnel do the selling.",
   },
   {
     icon: DollarSign,
-    title: "Turn views into revenue",
-    desc: "Attach your digital product, let the built-in funnel do the selling, and watch viewers become paying customers.",
+    title: "Drive traffic and convert into sales",
+    desc: "Your content goes live, attracts viewers, and turns them into paying customers on autopilot.",
   },
 ];
 
@@ -72,18 +72,14 @@ const HowItWorksSection = () => {
           </div>
         </div>
 
-        {/* Inspiring CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <p className="text-lg text-muted-foreground mb-6">
-            You don't need followers. You don't need experience. You just need to start.
-          </p>
           <Button variant="neon" size="xl" onClick={scrollToOffer}>
-            Start Building Your System
+            Get Started Now
           </Button>
         </motion.div>
       </div>

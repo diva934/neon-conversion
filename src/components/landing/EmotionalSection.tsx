@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+const painPoints = [
+  "Jumping from one idea to another with no results",
+  "Overthinking everything but never executing",
+  "Watching others win while you're stuck",
+  "Feeling like you're wasting time every day",
+];
+
 const EmotionalSection = () => {
   const scrollToOffer = () => {
     document.getElementById("offer-section")?.scrollIntoView({ behavior: "smooth" });
@@ -18,23 +25,19 @@ const EmotionalSection = () => {
         transition={{ duration: 0.6 }}
         className="relative z-10 max-w-3xl mx-auto text-center"
       >
-        <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 leading-tight">
-          You've tried everything.
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-8 leading-tight">
+          Tired of chasing business models that never work?
         </h2>
+
         <div className="space-y-4 text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
-          <p>
-            Dropshipping. Print-on-demand. Affiliate marketing. Freelancing. You jumped from one business model to the next — spending months learning, building, and hoping something would finally stick.
-          </p>
-          <p>
-            But the results never matched the effort. The gurus made it look easy. It wasn't.
-          </p>
-          <p className="text-foreground font-semibold">
-            What if the problem was never you — but the system you were using?
-          </p>
-          <p>
-            This is different. One AI-powered system that creates content, builds your audience, and sells your product — on autopilot. No filming. No guessing. No burnout.
-          </p>
+          {painPoints.map((point) => (
+            <p key={point}>— {point}</p>
+          ))}
         </div>
+
+        <p className="text-foreground font-semibold text-lg mb-10">
+          Nothing changes… until you decide to change something.
+        </p>
 
         <Button variant="neon" size="xl" onClick={scrollToOffer}>
           See How It Works
