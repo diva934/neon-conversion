@@ -44,7 +44,7 @@ const HowItWorksSection = () => {
         </motion.div>
 
         <div className="relative">
-          <div className="absolute left-6 sm:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-neon/60 via-neon/20 to-transparent opacity-80 mx-[320px]" />
+          
 
           <div className="space-y-12">
             {steps.map((step, i) =>
