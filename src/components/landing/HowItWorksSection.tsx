@@ -61,7 +61,7 @@ const HowItWorksSection = () => {
                 </div>
 
                 <div className="pt-2">
-                  <span className="text-xs font-bold text-neon tracking-wider uppercase mb-1 block">
+                  <span className="text-xs text-neon tracking-wider uppercase mb-1 block font-sans font-bold">
                     Step {i + 1}
                   </span>
                   <h3 className="text-xl font-bold mb-1">{step.title}</h3>
