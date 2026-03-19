@@ -14,11 +14,11 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative z-10 max-w-4xl mx-auto text-center"
-      >
+        className="relative z-10 max-w-4xl mx-auto text-center">
+        
         <div className="inline-flex items-center gap-2 glass-card rounded-full px-4 py-1.5 mb-8">
           <span className="w-2 h-2 rounded-full bg-neon animate-pulse-neon" />
-          <span className="text-sm text-muted-foreground">AI-Powered Content Engine</span>
+          <span className="text-sm text-muted-foreground">​AI Business   </span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-10">
@@ -33,8 +33,8 @@ const HeroSection = () => {
           </Button>
         </div>
       </motion.div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
